@@ -7,17 +7,54 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="post">
+    <h1>Student Email</h1>
+    <form action="request.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="stu_name" id="name">
         <br><br>
         <label for="email" >Email</label>
-        <input type="text" name="stu_email" id="email">
+        <input type="email" name="stu_email" id="email">
         <br><br>
         <label for="password">Password</label>
-        <input type="text" name="stu_password" id="password">
+        <input type="password" name="stu_password" id="password">
         <br><br>
-        <button type="button">Submit</button>
+        <label for="phone">Phone</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+        <label for="passport">Passport Photo</label>
+        <input type="file" accept="image/*" name="stu_passport" id="passport">
+        <br><br>
+        <label for="dob">Date of Brirthday</label>
+        <input type="date" name="stu_dob" id="dob">
+        <br><br>
+        <label for="">General</label>
+        <br>
+        <label for="years">Years</label>
+        <select name="stu_year" id="years">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+        <br><br>
+        <label for="">Hobbies</label>
+        <br>
+        <input type="Checkbox" name="travel" id="travel" value="travelling"><label for="travel">Travelling</label>
+        <input type="Checkbox" name="read"
+        id="read" value="reading"><label for="travel">Reading</label>
+        <input type="Checkbox" name="game" id="game" value="gaming"><label for="game">Gaming</label>
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="Stu_address" id="address" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="time" name="" id="">
+        <input type="datetime-local" name="" id="">
+        <input type="week" name="" id="">
+        <input type="month">
+        <input type="color" name="color">
+        <input type="range" name="" id="" min="0" max="100">
+        <br><br>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
